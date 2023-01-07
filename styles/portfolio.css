@@ -3,22 +3,30 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.main_div {
+/* .main_div {
     position: relative;
-}
+} */
 
 .banner {
-    background: url("/images/banner/banner2.png") no-repeat;
     width: 100vw;
     height: 800px;
     margin: 0;
-    background-size: cover;
+    position: relative;
 }
 
 .banner-textArea {
+    z-index: 500;
     width: 500px;
-    float: right;
-    margin: 170px 200px 120px 0px;
+    position: absolute;
+    right: 200px;
+    top: 200px;
+}
+
+.banner_img {
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    height: 800px;
 }
 
 .banner-title {
@@ -153,6 +161,7 @@ margin-bottom:30px;
 } */
 .skills-container {
     display: flex;
+    justify-content: center;
     gap: 30px;
     text-align: center;
     margin-bottom: 100px;
@@ -230,12 +239,18 @@ margin-bottom:30px;
 
 }
 
-.future input[type="email"],
-textarea {
+
+.footer_input {
     margin-bottom: 15px;
-    border: 0;
-    width: 50%;
-    padding: 10px 20px;
+    outline: none;
+    background-color: black;
+    width: 150px;
+    border: 2px solid white;
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+
 }
 
 /* input {
